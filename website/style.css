@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "LDF-ComicSans";
+    src: url("res/ldf-comicsansbold.ttf");
+}
+
+/*
+white:  #ebdbb2
+gray:   #282828
+yellow: #d79921
+red:    #cc241d
+*/
+
+* {
+    font-family: "LDF-ComicSans";
+    font-size: 32px;
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+p {
+    font-size: 40px;
+}
+h1 {
+    font-size: 64px;
+    color: #d79921;
+}
+h6 {
+    font-size: 18px;
+    color: #505050;
+}
+a {
+    color: #cc241d;
+}
+
+.sidebar {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.sidebar a {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+    background-color: #303030;
+    color: #98971a;
+}
+
+.emoji {
+    width: 35px;
+}
+
+.box {
+    border: 10px solid #d79921;
+    padding: 50px;
+    margin: 50px;
+}
+
+#play_btn {
+    font-size: 20px;
+}
+
+#doomguy69 {
+    color: #007799;
+}

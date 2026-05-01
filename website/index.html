@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my empty void</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <audio id="bg_music" src="res/breeze_sensation.mp3" loop="loop"></audio>
+        <button id="play_btn">not playing music ;(</button>
+        <img class="emoji" id="play_banana" src="">
+
+        <center>
+            <marquee scrollamount="30">
+                <h1 class="marqueeheader">welcome to my void <img class="emoji" src="res/lain_chibi.jpg"></h1>
+            </marquee>
+            <img src="res/nerd_smoking.jpg">
+        </center>
+
+        <div class="sidebar">
+            <a target="_blank" href="index.html">home</a>
+            <a target="_blank" href="cool_software.html">cool software</a>
+        </div>
+
+        <div class="box">
+
+            <p>im <font id="doomguy69">doomguy69</font>, fellow <a target="_blank" href="https://github.com/Doomguy69dev">31337 h4x0r</a>
+            (like <img class="emoji" src="res/lain_chibi.jpg">) who likes making games (and sucks at it
+            <img class="emoji" src="res/kek.jpg">) and sometimes makes
+            <a target="_blank" href="https://youtube.com/@HolyCEnjoyer">videos</a>!</p>
+            <p>i mostly use <a target="_blank" href="https://www.youtube.com/watch?v=tas0O586t80">C</a>, not because im "based",
+            i think the "based" mentality should be burned in fire and sacrificed <img class="emoji" src="res/burn_elmo.gif">.
+            on a serious note, it doesn't really matter what you use <img class="emoji" src="res/lain_dance.gif">.</p>
+
+        </div>
+
+        <div class="box">
+
+            <p>what i do:</p>
+            <ul>
+                <li>programming</li>
+                <li>yapping</li>
+                <li>listening to <a target="_blank" href="https://www.youtube.com/watch?v=uLNrlwaNtGc">beautiful classical masterpieces</li>
+                <li>oh did i mention <a target="_blank" href="https://github.com/Doomguy69dev">programming</a>?</li>
+            </ul>
+
+        </div>
+
+        <h6>fuck copyright 2026</h6>
+
+        <script>
+            play_btn.onclick = function() {
+                if (bg_music.paused) {
+                    bg_music.play();
+                    play_btn.innerText = "PLAYING MUSIC n_n";
+                    play_banana.src = "res/banana.gif";
+                } else {
+                    bg_music.pause();
+                    play_btn.innerText = "not playing music ;(";
+                    play_banana.src = "";
+                }
+            }
+        </script>
+    </body>
+</html>

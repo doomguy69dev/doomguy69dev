@@ -11,7 +11,7 @@
 
         <center>
             <marquee scrollamount="30">
-                <h1 class="marqueeheader">welcome to my void <img class="emoji" src="res/lain_chibi.jpg"></h1>
+                <h1 class="marqueeheader">welcome to my empty void <img class="emoji" src="res/lain_chibi.jpg"></h1>
             </marquee>
             <img src="res/nerd_smoking.jpg">
         </center>
@@ -45,13 +45,19 @@
 
         </div>
 
-        <h6>fuck copyright 2026</h6>
+        <center>
+            <canvas id="bg"></canvas>
+            <h6>thx amista azozin for this kewl renderer :3</h6>
+            <h6>fuck copyright 2026</h6>
+        </center>
 
+        <script src="res/monkey.js"></script>
+        <script src="3d.js"></script>
         <script>
             play_btn.onclick = function() {
                 if (bg_music.paused) {
                     bg_music.play();
-                    play_btn.innerText = "PLAYING MUSIC n_n";
+                    play_btn.innerText = "PLAYING MUSIC :3";
                     play_banana.src = "res/banana.gif";
                 } else {
                     bg_music.pause();

@@ -44,6 +44,7 @@ a {
     display: block;
     background-color: #303030;
     color: #98971a;
+    border: 5px solid #252525;
 }
 
 .emoji {

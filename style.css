@@ -59,10 +59,29 @@ a {
     margin: 50px;
 }
 
-#play_btn {
-    font-size: 20px;
+.rgb {
+    letter-spacing: 3px;
+    animation: color_rot 4s linear 0s infinite;
 }
 
-#doomguy69 {
-    color: #007799;
+@keyframes color_rot {
+    from {
+        color: #6666ff;
+    }
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
+}
+
+#play_btn {
+    font-size: 20px;
 }

@@ -3,7 +3,7 @@ bg.height = 600;
 const ctx = bg.getContext("2d");
 
 const BACKGROUND = "#191919";
-const FOREGROUND = "#d79921";
+const FOREGROUND = "#007799";
 
 function clear() {
     ctx.fillStyle = BACKGROUND
@@ -38,6 +38,10 @@ function translate_z({x, y, z}, dz) {
     return {x, y, z: z + dz};
 }
 
+function translate_y({x, y, z}, dy) {
+    return {x, y: y + dy, z};
+}
+
 function rotate_xz({x, y, z}, angle) {
     const c = Math.cos(angle);
     const s = Math.sin(angle);
@@ -45,10 +49,10 @@ function rotate_xz({x, y, z}, angle) {
         x: x*c-z*s,
         y,
         z: x*s+z*c,
-    };
+    }
 }
 
-let dz = 3;
+let dz = 1;
 let angle = 0;
 
 function frame() {
@@ -57,7 +61,7 @@ function frame() {
     angle += Math.PI*dt;
     clear()
     for (const v of vs) {
-        point(screen(project(translate_z(rotate_xz(v, angle), dz))))
+        point(screen(project(translate_z(translate_y(rotate_xz(v, angle), -0.5), dz))));
     }
     setTimeout(frame, 1000/FPS);
 }

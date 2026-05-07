@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my empty void</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <audio id="bg_music" src="res/breeze_sensation.mp3" loop="loop"></audio>
+        <button id="play_btn">not playing music ;(</button>
+        <img class="emoji" id="play_banana" src="">
+        <div class="sidebar">
+            <a target="_blank" href="index.html">home</a>
+            <a target="_blank" href="music.html">music</a>
+            <a target="_blank" href="projects.html">projects</a>
+        </div>
+
+        <div class="box">
+
+            <p class="rgb">here are some kewl projects i made:</p>
+            <ul>
+                <li><a target="_blank" href="https://github.com/doomguy69dev/headers">useful C header libs</a></li>
+                <li><a target="_blank" href="https://bigsmokedev.itch.io/dude-with-guns">dude with guns</a></li>
+                <li><a target="_blank" href="https://bigsmokedev.itch.io/they-keep-coming-back">literally flappy bird with guns</a><img class="emoji" src="res/kek.jpg"></li>
+                <li><a target="_blank" href="https://github.com/bigsmokeDev/Windbolt">windbolt</a> (barebones lib to make games with, could be a nice resource)</li>
+            </ul>
+
+        </div>
+
+        <center>
+            <h6>fuck copyright 2026</h6>
+        </center>
+
+        <script>
+            play_btn.onclick = function() {
+                if (bg_music.paused) {
+                    bg_music.play();
+                    play_btn.innerText = "PLAYING MUSIC :3";
+                    play_banana.src = "res/banana.gif";
+                } else {
+                    bg_music.pause();
+                    play_btn.innerText = "not playing music ;(";
+                    play_banana.src = "";
+                }
+            }
+        </script>
+    </body>
+</html>

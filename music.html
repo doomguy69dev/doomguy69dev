@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my empty void</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <audio id="bg_music" src="res/breeze_sensation.mp3" loop="loop"></audio>
+        <button id="play_btn">not playing music ;(</button>
+        <img class="emoji" id="play_banana" src="">
+        <div class="sidebar">
+            <a target="_blank" href="index.html">home</a>
+            <a target="_blank" href="music.html">music</a>
+            <a target="_blank" href="projects.html">projects</a>
+        </div>
+
+        <div class="box">
+
+            <p>idk man here is some music i made ig:</p>
+            <ul>
+                <li>megalovania on c64 (furnace tracker)<audio controls src="res/ma-music/c64-megalovania.ogg"></audio></li>
+                <li>the megalovania we have at home<img class="emoji" src="res/kek.jpg"><audio controls src="res/ma-music/megalovania.ogg"></audio></li>
+                <li>some kind of underwater theme<audio controls src="res/ma-music/underwater.ogg"></audio></li>
+                <li>looking at stars be like<audio controls src="res/ma-music/stars.ogg"></audio></li>
+            </ul>
+            <h1 class="rgb">music that im proud of</h1>
+            <ul>
+                <li>solving a puzzle<img class="emoji" src="res/think.gif"><audio controls src="res/ma-music/solving_a_puzzle.ogg"></audio></li>
+                <li>idk what to name this but it's cool<img class="emoji" src="res/dog_dance.gif"><audio controls src="res/ma-music/idk.ogg"></audio></li>
+                <li>some shit i made for the mental asylum<img class="emoji" src="res/banana.gif"><audio controls src="res/ma-music/mental_asylum.ogg"></audio></li>
+                <li>most kalming song ever<img class="emoji" src="res/lain_dance.gif"><audio controls src="res/ma-music/mc2.ogg"></audio></li>
+            </ul>
+
+        </div>
+
+        <center>
+            <h6>ty crystal for da dancing dog</h6>
+            <h6>fuck copyright 2026</h6>
+        </center>
+
+        <script>
+            play_btn.onclick = function() {
+                if (bg_music.paused) {
+                    bg_music.play();
+                    play_btn.innerText = "PLAYING MUSIC :3";
+                    play_banana.src = "res/banana.gif";
+                } else {
+                    bg_music.pause();
+                    play_btn.innerText = "not playing music ;(";
+                    play_banana.src = "";
+                }
+            }
+        </script>
+    </body>
+</html>
